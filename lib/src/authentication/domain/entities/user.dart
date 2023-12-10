@@ -12,8 +12,13 @@ class User extends Equatable {
     required this.name,
     required this.avatar,
   });
-  
+
+  const User.empty()
+      : id = 1,
+        createdAt = 'empty_createdAt',
+        name = 'empty_name',
+        avatar = 'empty_avatar';
+
   @override
   List<Object?> get props => [id];
 }
- 
